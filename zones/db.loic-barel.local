@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     loic-barel.local. root.loic-barel.local. (
+                              3         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      server.loic-barel.local.
+server  IN      A       10.205.14.1
+smtp    IN      A       10.205.14.10
+imap    IN      A       10.205.14.11
+pop     IN      A       10.205.14.12
+
